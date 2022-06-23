@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Pokemon Theme Team</title>
+	</head>
+	<body>
+		<h1>Pokemon Theme Team</h1>
+		<div class="first pokemon">
+			<h2>Your main pokemon is {{name}}</h2>
+			<img src="{{imageURL}}" />
+		</div>
+
+		<h2>Your teammates are:</h2>
+		{% for data in urls_and_names %}
+		<div>
+			<h2>Name: {{data.0}}</h2>
+			<img src="{{data.1}}" />
+		</div>
+		{% endfor %}
+	</body>
+</html>
